@@ -8,7 +8,11 @@ function App() {
 
     useEffect(() => {
         const val = JSON.parse(localStorage.getItem("theme"));
-        setTheme(val);
+        if (val) {
+            setTheme(val);
+        } else {
+            setTheme("theme-dark");
+        }
     }, []);
 
     return (
