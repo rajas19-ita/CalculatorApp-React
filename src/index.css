@@ -1,0 +1,69 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+}
+input[type="radio"]:checked {
+    background-color: rgb(var(--color-radio)); /* Adjust as needed */
+}
+
+@layer base {
+    .theme-dark {
+        --color-screen: 58, 71, 100;
+        --color-radio: 208, 63, 47;
+        --color-text-base: 255, 255, 255;
+        --color-text-del: 255, 255, 255;
+        --color-text-calc: 255, 255, 255;
+        --color-keypad: 35, 44, 67;
+        --color-display: 24, 32, 52;
+        --color-text-num: 68, 75, 90;
+        --color-button-num: 234, 227, 220;
+        --color-button-calc: 208, 63, 47;
+        --color-button-del: 99, 112, 151;
+        --color-shadow-num: 180, 165, 151;
+        --color-shadow-del: 64, 78, 114;
+        --color-shadow-calc: 147, 38, 26;
+    }
+
+    .theme-light {
+        --color-screen: 230, 230, 230;
+        --color-radio: 202, 85, 2;
+        --color-text-base: 53, 53, 44;
+        --color-keypad: 209, 204, 204;
+        --color-display: 237, 237, 237;
+        --color-text-num: 53, 53, 44;
+        --color-text-del: 255, 255, 255;
+        --color-text-calc: 255, 255, 255;
+        --color-button-num: 229, 228, 225;
+        --color-button-calc: 202, 85, 2;
+        --color-button-del: 55, 127, 134;
+        --color-shadow-num: 166, 157, 145;
+        --color-shadow-del: 27, 95, 101;
+        --color-shadow-calc: 137, 57, 1;
+    }
+    .theme-magic {
+        --color-screen: 22, 6, 40;
+        --color-radio: 0, 224, 209;
+        --color-text-base: 255, 229, 61;
+        --color-keypad: 29, 9, 52;
+        --color-display: 29, 9, 52;
+        --color-text-num: 255, 229, 61;
+        --color-text-del: 255, 255, 255;
+        --color-text-calc: 27, 36, 40;
+        --color-button-num: 52, 28, 79;
+        --color-button-calc: 0, 224, 209;
+        --color-button-del: 88, 7, 125;
+        --color-shadow-num: 135, 28, 156;
+        --color-shadow-del: 188, 21, 244;
+        --color-shadow-calc: 108, 249, 242;
+    }
+}
